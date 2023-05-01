@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: gainsboro;
+}
+
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    
+}
+
+.nav__list li a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.abrir-menu{
+    display: none;
+}
+.cerrar-menu{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+
+    .abrir-menu{
+        display: block;
+        color:black;
+        font-size: 1.25rem;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    .cerrar-menu{
+        display: block;
+        color: white;
+        font-size: 1.25rem;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+    }   
+
+    .nav{
+        /*estas dos propiedades hacen que las demas propiedades no se vean, esto hace q el nav no se vea*/
+        opacity: 0;
+        visibility: hidden;
+
+
+        display: flex;
+        flex-direction: column;     
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0,0,0,.3);
+        
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav__list li a{
+        color: white;
+    }
+
+    
+    
+}
