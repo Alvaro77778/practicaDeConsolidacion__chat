@@ -121,11 +121,13 @@
     flex-direction: row;
     justify-content: center;
   }
-  .padreNombre1__nombreyfecha {
+  .nombreyfecha {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: solid 1px red;
+    justify-content: flex-end;
+    padding-left: 10%;
+    /*border: solid 1px red;*/
+    width: 100%;
   }
   .padreImagen1 {
     width: 18%;
@@ -145,7 +147,7 @@
   .nombreChat {
     font-size: 1rem;
     /*border: 0.3rem solid black;*/
-    width: 43%;
+    width: 28%;
   }
   .tamañoFecha {
     /*border: 0.2rem solid black;*/
