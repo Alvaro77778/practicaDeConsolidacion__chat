@@ -129,7 +129,7 @@
   }
   .padreImagen1 {
     width: 18%;
-    /* border: 1px solid white;*/
+    border: 3px solid green;
     display: flex;
     align-items: center;
   }
@@ -145,7 +145,7 @@
   .nombreChat {
     font-size: 1rem;
     /*border: 0.3rem solid black;*/
-    width: 55%;
+    width: 43%;
   }
   .tamañoFecha {
     /*border: 0.2rem solid black;*/
