@@ -1,0 +1,188 @@
+@media screen and (max-width: 550px){
+
+
+
+    .mainSecciones {
+        display: none;
+        justify-content: center;
+        
+        padding-top: 3%;
+        padding-bottom: 4%;
+
+    }
+
+    .mainSeccionesActive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-top: 3%;
+        padding-bottom: 4%;
+
+    }
+
+    .padreBuscaChat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        background-color: $colorVerde;
+        color: aquamarine;
+        padding-bottom: 400px;
+    }
+
+    .padreNombreChat {
+        width: 90%;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .divChats {
+            
+            display: flex;
+            flex-direction: row;
+        
+            width: 100%;
+            border: 1px solid yellow;
+            padding-left: 1%;
+            
+
+        }
+
+    .padreImagen1 {
+            
+            width: 20%;
+            border: 1px solid white;
+        
+        }
+    .padreNombre1 {
+        
+        width: 50%;
+        
+        border: 5px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nombreChat {
+        
+        font-size: 1rem;
+        border: 4px solid black;
+        width: 40%;
+        
+    }
+
+    .tamañoFecha {
+        border: 0.2rem solid black;
+        font-size: 0.6rem;
+        color: darkgray;
+        width: 40%;
+    }
+
+    
+
+    .buscador {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .padreChatPrivado {
+        display: flex;
+        flex-direction: column;
+        
+        width: 50%;
+        background-color: yellowgreen;
+    }
+
+    .textoCristi {
+        text-align: center;
+    
+        font-size: 18px;
+        color:white;
+
+    }
+
+    .chat {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 5px solid yellowgreen;
+    }
+
+    .lorem {
+        padding: 17px;
+        background-color: brown;
+    }
+
+    .chat1 {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        border: 5px solid yellowgreen;
+
+    }
+
+    .buscar {
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: center;
+        
+        
+    }
+
+    .reducir {
+        width: 60%;
+        
+        
+    }
+
+
+    .buton {
+        width: 10%;
+        
+        background-color: yellowgreen;
+        
+        
+
+    }
+
+
+
+    
+    .imagen1 {
+        
+        border: 1px solid black;
+        width: 100%;
+        border-radius: 90%;
+        
+        
+        
+    }
+
+    
+
+  
+
+
+
+    .nombreLore {
+        display: flex;
+        flex-direction: row;
+        
+        width: 440%;
+    }
+
+    .fechaLore {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        
+    }
+}

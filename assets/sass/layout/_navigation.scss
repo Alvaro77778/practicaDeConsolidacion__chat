@@ -8,20 +8,34 @@
 #header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
-    background-color: gainsboro;
+    padding: 1.5rem;
+    background-color: $colorVerdeAmarillo;
+    border: 1px solid $colorVerde;
 }
+
+.home{
+    
+    text-decoration-line: none;
+    color: black;
+    font-size: 1rem;
+    font-weight:bold;
+    font-family:sans-serif;
+    
+}
+
 
 .nav__list{
     display: flex;
     list-style-type: none;
-    gap: 1rem;
-    
+    gap: 6.5rem;
 }
 
 .nav__list li a{
     text-decoration-line: none;
-    color: black;
+    color:black;
+    font-size: 1rem;
+    font-family:sans-serif;
+    
 }
 
 .abrir-menu{
@@ -78,11 +92,15 @@
     .nav__list{
         flex-direction: column;
         align-items: end;
+        gap: 2rem;
     }
 
     .nav__list li a{
         color: white;
+        
     }
+
+  
 
     
     
