@@ -176,6 +176,9 @@
     color: black;
     background-color: rgb(179, 247, 78);
   }
+  #home {
+    background-color: rgb(179, 247, 78);
+  }
   .color-icono {
     background-color: rgb(179, 247, 78);
   }
@@ -217,6 +220,9 @@
   .iconoDown {
     background-color: black;
     color: black;
+  }
+  .icono-menu {
+    background-color: rgb(179, 247, 78);
   }
 }
 .mainSecciones {
