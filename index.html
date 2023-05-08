@@ -6,36 +6,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <!--cdn Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
-<body>
+<body id="Body">
     <header id="header">
-        <a href="#">Nav</a>
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <div class="contenedorDeHome" onclick="desapareceSeccion()">
+            <i class="bi bi-house-fill color-icono"></i>
+            
+           
+                <a class="home" id="home" href="#">Home</a>
+           
+          
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list icono-menu"></i></button>
         <nav class="nav" id="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x icono-x"></i></button>
             <ul class="nav__list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quienes Somos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Que Hacemos</a></li>
-                <li><a href="#">Contacto</a></li>
+                
+                <li><a href="#">Manuales</a></li>
+                <li><a href="#">Noticias</a></li>
+                
+                <li><a href="#">Organigrama</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#" onclick="apareceChat()" >Chat vendedores & Soporte</a></li>
             </ul>
+
+            <ul class="ulPerfil">
+                <li class="liPerfil" id="liDePerfil" onclick="presionaDropdown()">
+                    <a href="#">Perfil <i class="bi bi-caret-down-fill" id="iconoDown"></i></a>
+                </li>
+            </ul>
+
+            
         </nav>
+            <div id="dropdown">
+                
+                    <button class="botonDropdown" onclick="desapareceDropdown()"><i class="bi bi-x icono-x iconoDropdown"></i></button>
+                    <h3 class="h3">Importar archivos</h3>
+                    <ul>
+                        <li><a  class="textDropdown"href="">Imagenes</a></li>
+                        <li><a  class="textDropdown"href="">Videos</a></li>
+                        <li><a  class="textDropdown"href="">Documentos</a></li>
+                        <li><a  class="textDropdown"href=""></a></li>
+                    </ul>
+                
+            </div>
     </header>
 
+    
+    <main class="mainSecciones">
+        <div class="contenedorH1">
+            <div class="h1">
+                <h1>Chat Vendedores & Equipo De Soporte</h1>
+            </div>
+        </div>
+        <aside class="padreBuscaChat">
 
+            <article id="parteIzq">
+            
+                <div class="buscador">
+                    <form action="get" class="buscar">
+                        
+                            <input type="text" class="reducir">
+                            <button class="buton"></button>
+                            
+                        
+                    </form>
+                
+                </div>
+                
+                <div class="padreNombreChat">
+                    
+                    <div class="nombreyfecha">
+                        <div class="padreImagen1">
+                            <img src="assets/img/mujer4.png" alt=""class="imagen1" >
+                        </div>
+                        <div class="padreNombre1">
+                            
+                                <p class="nombreChat"> Pamela</p>
+                           
+                                <p class="tamañoFecha">15/04/2023</p>
+                                <i class="bi bi-check-all check"></i>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="padreNombreChatCris">
+                    
+                    
+                    <div class="nombreyfecha">
+                        <div class="padreImagen1">
+                            <img src="assets/img/hombre10.jpg" alt=""class="imagen1" >
+                        </div>
+                        <div class="padreNombre1">
+                            
+                                <p class="nombreChatCris">Cris</p>
+                           
+                                <p class="tamañoFechaCris">15/04/2023</p>
+                                <i class="bi bi-check-all" id="checkCris"></i>
+                            
+                        </div>
+                    </div>
+                
+                
+            </div>
+            <div class="padreNombreChat" onclick="desapareceTextBoldRenata()">
+                    
+                    
+                <div id="activeRenata">
+                    <div class="padreImagen1">
+                        <img src="assets/img/mujer7.jpg" alt=""class="imagen1" >
+                    </div>
+                    <div class="padreNombre1">
+                        
+                            <p class="nombreChat">Renata</p>
+                       
+                            <p id="tamañoFechaRenata">15/04/2023</p>
+                            <i class="bi bi-chat-text pendiente" id="iconoMensaje"></i>
+                            <i class="bi bi-check-all check" id="iconoCheckMensajeRenata"></i>
 
+                        
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="padreNombreChat">
+                    
+                    
+                <div class="nombreyfecha">
+                    <div class="padreImagen1">
+                        <img src="assets/img/mujer5.jpg" alt=""class="imagen1" >
+                    </div>
+                    <div class="padreNombre1">
+                        
+                            <p class="nombreChat">Ximena</p>
+                       
+                            <p class="tamañoFecha">15/04/2023</p>
+                            <i class="bi bi-check-all check"></i>
+                            
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="padreNombreChatRodrigo" onclick="desapareceTextBold()">
+                    
+                    
+                <div id="activeRodrigo">
+                    <div class="padreImagen1">
+                        <img src="assets/img/hombre20.jpeg" alt=""class="imagen1" >
+                    </div>
+                    <div class="padreNombre1">
+                        
+                            <p class="nombreChatRodrigo" id="padreRodrigo">Rodrigo</p>
+                       
+                            <p id="tamañoFechaRodrigo">15/04/2023</p>
+                            <i class="bi bi-chat-text pendiente" id="iconoMensaje2"></i>
+                            <i class="bi bi-check-all check" id="iconoCheckMensaje"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>   
+        <section id="parteDer">
+            <div>
+                
+                <div class="padreChatTitulo">
+                    <img src="assets/img/mujer5.jpg" alt="" class="imagen"><p class="textoCristi">Ximena</p>
+                </div>
+                
+                <div class="conversacionPadre">
+                    <div class="chat">
+                        <div class="padreImagen2">
+                            <img class="imagenChatPrivado" src="assets/img/mujer5.jpg" alt="Cristi">
+                            <p class="nombresParrafo">Ximena</p>
+                        </div>
+                        <div class="padreLorem">
+                            
+                            <p class="lorem">Lorem ipsum dolor sit amet consectetur a. </p>
+                        </div>
+                    </div>
+                    <div class="chat1">
+                        <div class="padreImagen2">
+                            <img class="imagenChatPrivado" src="assets/img/hombre10.jpg" alt="Cristobal">
+                            <p class="nombresParrafo">Cris</p>
+                        </div>
+                        <div class="padreLorem">
+                            
+                            <p class="lorem2 ">Lorem ipsum dolor sit amet consectetur  </p>
+                        </div>
+                        
 
+                    </div>
+                    <div class="chat">
+                        <div class="padreImagen2">
+                            <img class="imagenChatPrivado" src="assets/img/mujer5.jpg" alt="Cristi">
+                            <p class="nombresParrafo">Ximena</p>
+                        </div>
+                        <div class="padreLorem">
+                            
+                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                    <div class="chat1">
+                        <div class="padreImagen2">
+                            <img class="imagenChatPrivado" src="assets/img/hombre10.jpg" alt="Cristobal">
+                            <p class="nombresParrafo">Cris</p>
+                        </div>
+                        <div class="padreLorem">
+                            
+                            <p class="lorem2">Lorem ipsum dolor sit.</p>
+                        </div>
+                        
 
+                    </div>
+                    <div class="buscador">
+                        <form action="get" class="buscar">
+                            
+                                <input type="text" class="reducir2">
+                                <button class="buton2"></button>
+                                
+                            
+                        </form>
+                    
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        </aside>
+        
+        
+        
+    </main>
 
-
-
-
-
-
-
+    
     <script src="assets/js/script.js"></script>
 </body>
 </html>
