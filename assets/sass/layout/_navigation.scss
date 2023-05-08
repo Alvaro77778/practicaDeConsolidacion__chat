@@ -3,39 +3,78 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: rgb(32, 32, 32);
+    
 }
+
+.icono-menu{
+    background-color: $colorHeader;
+    color: rgb(149, 0, 255); 
+    
+}
+
 
 #header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    background-color: $colorVerdeAmarillo;
-    border: 1px solid $colorVerde;
+    background-color: $colorHeader;
+   
+    
 }
 
-.home{
+
+
+
+.contenedorDeHome{
+    
+    background-color: $colorHeader;
+    
+    
+}
+#home{
     
     text-decoration-line: none;
     color: black;
     font-size: 1rem;
-    font-weight:bold;
+    font-weight:700;
     font-family:sans-serif;
+    background-color: $colorHeader ;
     
+    
+}
+
+.color-icono{
+    background-color: $colorHeader;
+    padding: 3px;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: $colorHeader;
 }
 
 
 .nav__list{
     display: flex;
     list-style-type: none;
-    gap: 6.5rem;
+    gap: 5rem;
+    background-color: $colorHeader;
+    
 }
 
 .nav__list li a{
     text-decoration-line: none;
     color:black;
+    font-weight: 600;
     font-size: 1rem;
     font-family:sans-serif;
-    
+    background-color: $colorHeader;
+    padding: 2px;
+   
 }
 
 .abrir-menu{
@@ -45,11 +84,81 @@
     display: none;
 }
 
+#iconoDown{
+    background-color: $colorHeader;
+}
+
+
+
+#dropdown{
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 150px;
+    background-color: $colorVerde;
+    height: 300px;
+     text-align: end;
+    border: 8px solid $colorVerde;
+     
+}
+
+#dropdown ul{
+    list-style-type: none;
+    
+    background-color: $colorVerde;
+}
+
+#dropdown ul li{
+    background-color: $colorVerde;
+    
+}
+
+#dropdown ul li a{
+    background-color: $colorVerde;
+    text-decoration: none;
+}
+.botonDropdown{
+    border: 6px solid $colorVerde;
+    
+    color: gold;
+}
+
+.botonDropdown :hover{
+    cursor: pointer;
+}
+
+.iconoDropdown{
+    color: black;
+    background-color: yellow;
+}
+
+.textDropdown{
+    color: aquamarine;
+    
+}
+.ulPerfil{
+    background-color: $colorHeader;
+}
+
+.liPerfil{
+    background-color: $colorHeader;
+    list-style-type: none;
+}
+
+.liPerfil a{
+    background-color: $colorHeader;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
 @media screen and (max-width: 550px){
 
     .abrir-menu{
         display: block;
-        color:black;
+        
         font-size: 1.25rem;
         background-color: transparent;
         border: 0;
@@ -57,13 +166,17 @@
     }
     .cerrar-menu{
         display: block;
-        color: white;
         font-size: 1.25rem;
         background-color: transparent;
         border: 0;
         cursor: pointer;
 
     }   
+
+    #header{
+        background-color: $colorVerdeAmarillo;
+        margin-bottom: 7%;
+    }
 
     .nav{
         /*estas dos propiedades hacen que las demas propiedades no se vean, esto hace q el nav no se vea*/
@@ -84,6 +197,15 @@
         
     }
 
+    .contenedorDeHome{
+        color: black;
+        background-color: $colorVerdeAmarillo;
+    }
+
+    .color-icono{
+        background-color: $colorVerdeAmarillo;
+    }
+
     .nav.visible {
         opacity: 1;
         visibility: visible;
@@ -93,15 +215,43 @@
         flex-direction: column;
         align-items: end;
         gap: 2rem;
+        background-color: black;
+        text-decoration-line: none;
+        
     }
 
     .nav__list li a{
         color: white;
-        
+        padding: 20px;
+        background-color: black;
+        text-decoration-line:none;
     }
 
   
 
-    
-    
+    .icono-x{
+        color: rgb(149, 0, 255);
+        font-size: 2rem;
+        background-color: black;
+    }
+    #dropdownDesktop{
+        display: none;
+    }
+
+    .ulPerfil{
+        background-color: black;
+    }
+
+    .liPerfil{
+    background-color: black;
+}
+    .liPerfil a{
+        background-color: black;
+        color: white;
+    }
+
+    .iconoDown{
+        background-color: black;
+        color: black;
+    }
 }
